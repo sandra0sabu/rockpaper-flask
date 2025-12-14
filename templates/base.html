@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rock Paper Scissors</title>
+  <style>
+    body{font-family:system-ui,Arial;margin:24px;background:#f6f8fb;color:#0b1220}
+    .card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 6px 18px rgba(11,18,32,0.06);max-width:720px;margin:auto}
+    .choices button{margin:6px;padding:12px 18px;border-radius:8px;border:1px solid #ddd;background:#fff;cursor:pointer}
+    .score{display:flex;gap:12px;margin-top:12px}
+    .small{font-size:0.9rem;color:#555}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Rock • Paper • Scissors</h1>
+    {% block content %}{% endblock %}
+  </div>
+</body>
+</html>

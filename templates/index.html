@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+  <p class="small">Play vs computer. Scores persist while your session lasts.</p>
+
+  {% if result %}
+  <div class="result">
+    {{ result }}
+  </div>
+{% endif %}
+
+
+  <form method="post">
+    <div class="choices">
+      {% for c in choices %}
+        <button name="choice" value="{{ c }}" type="submit">{{ c.title() }}</button>
+      {% endfor %}
+    </div>
+  </form>
+
+  <div cla
+  ss="score">
+    <div><strong>Player:</strong> {{ score.player }}</div>
+    <div><strong>Computer:</strong> {{ score.computer }}</div>
+    <div><strong>Ties:</strong> {{ score.ties }}</div>
+    <div><strong>Rounds:</strong> {{ score.rounds }}</div>
+  </div>
+
+  <form method="post" style="margin-top:14px;">
+    <input type="hidden" name="action" value="replay" />
+   <button class="reset-btn" type="submit">Reset / Replay</button>
+
+  </form>
+{% endblock %}
