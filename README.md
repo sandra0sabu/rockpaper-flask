@@ -1,30 +1,35 @@
-##🎮 Rock Paper Scissors – Flask Web App
+<div align="center">
+🎮 Rock Paper Scissors
+A modern Flask web game
 
-A simple and interactive Rock–Paper–Scissors game built using Python and Flask, where users can play against the computer. The application includes score tracking, replay functionality, and a responsive UI.
-This project demonstrates core backend and frontend concepts and is deployed on Render.
+Play Rock–Paper–Scissors against the computer with real-time score tracking and a clean UI.
+Built with Python + Flask and deployed on Render.
 
-#🛠️ Tech Stack
+🔗 Live Demo: https://your-app-name.onrender.com
+
+</div>
+✨ Highlights
+
+⚡ Fast and lightweight Flask app
+
+🤖 Play against computer (randomized logic)
+
+📊 Session-based score tracking
+
+🔁 Reset & replay anytime
+
+📱 Responsive, modern UI
+
+☁️ Deployed on Render
+
+🧩 Tech Stack
 
 Python 3
 
-Flask (Backend)
+Flask
 
-HTML5
+HTML / CSS
 
-CSS3
+Gunicorn
 
-Gunicorn (Production server)
-
-Render (Hosting)
-
-#✨ Features
-
-🎯 Play Rock–Paper–Scissors against the computer
-
-🔁 Replay / reset game at any time
-
-📊 Score tracking (Player, Computer, Ties, Rounds)
-
-🎨 Clean and responsive UI
-
-🌐 Deployed and accessible online
+Render
